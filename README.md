@@ -1,28 +1,28 @@
-# Api для проекта YaTube
-## Api построена на основе Django_Rst_Framework
+# Api for YaTube
+## Api based on Django_Rst_Framework
 
 
-Как запустить проект:
-Клонировать репозиторий и перейти в него в командной строке:
+How to start a project:
+Clone the repository and go to it on the command line:
 
 git clone https://github.com/yandex-praktikum/kittygram_backend.git
 cd kittygram_backend
-Cоздать и активировать виртуальное окружение:
+Create and activate a virtual environment:
 
 python3 -m venv env
-Если у вас Linux/macOS
+If you have Linux/mac OS
 
 source env/bin/activate
-Если у вас windows
+If you have windows
 
 source env/scripts/activate
 python3 -m pip install --upgrade pip
-Установить зависимости из файла requirements.txt:
+Install requirements from a file requirements.txt:
 
 pip install -r requirements.txt
-Выполнить миграции:
+Make migrations:
 
 python3 manage.py migrate
-Запустить проект:
+Start a project:
 
 python3 manage.py runserver
