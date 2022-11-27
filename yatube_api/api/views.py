@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAuthenticated
 from api.permissions import IsOwnerOrReadOnly, ReadOnly
 from api.serializers import CommentSerializer, GroupSerializer, PostSerializer, \
     FollowSerializer
-from posts.models import Group, Post
+from posts.models import Group, Post, Follow, User
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -36,10 +36,15 @@ class FollowViewSet(viewsets.ModelViewSet):
     pagination_class = None
 
     def get_queryset(self):
-        return self.request.user.following.all()
+        # user = get_object_or_404(User, username=self.request.user)
+        # new_queryset = Follow.objects.filter(user=self.request.user)
+        # return self.request.user.following.all()
+        # return new_queryset
+        # return Follow.objects.filter(user=user)
+        return self.request.user.followers.all()
 
-    # def perform_create(self, serializer):
-    #     serializer.save(user=self.request.user)
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
 
 
 class CommentViewSet(viewsets.ModelViewSet):
