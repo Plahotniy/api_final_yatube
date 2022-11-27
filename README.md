@@ -28,13 +28,13 @@ Start a project:
 python3 manage.py runserver
 
 request example:
-*GET http://127.0.0.1:8000/api/v1/posts/ - all posts
-*GET http://127.0.0.1:8000/api/v1/posts/{id}/ - one post
-*GET http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/ - all post's comments
-*GET http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/{id}/ - one post's comment
-*GET http://127.0.0.1:8000/api/v1/groups/ - all groups
-*GET http://127.0.0.1:8000/api/v1/groups/{id}/ - one group
-*GET http://127.0.0.1:8000/api/v1/follow/ - all follows
-*POST http://127.0.0.1:8000/api/v1/posts/ - create post
-*POST http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/ - create comment
-*POST http://127.0.0.1:8000/api/v1/follow/ - create follow
++ GET http://127.0.0.1:8000/api/v1/posts/ - all posts
++ GET http://127.0.0.1:8000/api/v1/posts/{id}/ - one post
++ GET http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/ - all post's comments
++ GET http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/{id}/ - one post's comment
++ GET http://127.0.0.1:8000/api/v1/groups/ - all groups
++ GET http://127.0.0.1:8000/api/v1/groups/{id}/ - one group
++ GET http://127.0.0.1:8000/api/v1/follow/ - all follows
++ POST http://127.0.0.1:8000/api/v1/posts/ - create post
++ POST http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/ - create comment
++ POST http://127.0.0.1:8000/api/v1/follow/ - create follow
