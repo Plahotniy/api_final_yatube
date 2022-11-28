@@ -1,12 +1,14 @@
 # Api for YaTube
 ## Api based on Django_Rst_Framework
 
+### This API is designed to work with the Youtube social network.
+### With it, you can create and edit posts, leave comments and subscribe to other authors.
 
 How to start a project:
 Clone the repository and go to it on the command line:
 
-git clone https://github.com/yandex-praktikum/kittygram_backend.git
-cd kittygram_backend
+git clone git@github.com:Plahotniy/api_final_yatube.git
+cd api_final_yatube
 Create and activate a virtual environment:
 
 python3 -m venv env
